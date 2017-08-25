@@ -17,6 +17,8 @@ android {
         jackOptions {
             enabled true
         }
+        // Habilita a biblioteca de suporte ao conceito de vector drawable.
+        vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
         release {
