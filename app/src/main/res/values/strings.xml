@@ -1,0 +1,33 @@
+<resources>
+    <!-- App name -->
+    <string name="app_name" translatable="false">Workshop Cast</string>
+
+    <!-- SharedPreference Keys -->
+    <string name="sp_file" translatable="false">br.com.castgroup.app.FILE_PREFERENCES</string>
+    <string name="sp_credential_key" translatable="false">CREDENTIAL_KEY</string>
+
+    <!-- OAuth strings -->
+    <string name="oauth_client_id" translatable="false">10be4336e6501c178325</string>
+    <string name="oauth_client_secret" translatable="false">ed7b41c6bd94c4d035df0719672664fcc3b9a02b</string>
+    <string name="oauth_host" translatable="false">castgroup.com.br</string>
+    <string name="oauth_schema" translatable="false">http</string>
+
+    <!-- Titles -->
+    <string name="title_activity_repos">Repositories</string>
+
+    <!-- Label strings -->
+    <string name="txt_loading">Loading</string>
+    <string name="txt_username">Username</string>
+    <string name="txt_password">Password</string>
+    <string name="txt_basic_auth">Basic Auth</string>
+    <string name="txt_oauth">OAuth</string>
+    <string name="txt_call">Call</string>
+    <string name="txt_good">Status API: Good</string>
+    <string name="txt_minor">Status API: Minor</string>
+    <string name="txt_major">Status API: Major</string>
+    <string name="txt_or">OR</string>
+
+    <!-- Messages strings -->
+    <string name="msg_required_field">Required field.</string>
+    <string name="msg_credential_not_found">Credential not found.</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.castgroup.app">
+
+    <!-- TODO (03) Geral: AndroidManifest.xml e estrutura de pastas (visao geral) -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="br.com.castgroup.app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="br.com.castgroup.app.presentation.ui.auth.AuthActivity">
+            <intent-filter>
+                <!-- Main/Launcher Intent Filters -->
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <!-- OAuth Intent Filters -->
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:host="@string/oauth_host" android:scheme="@string/oauth_schema" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.com.castgroup.app.presentation.ui.repos.ReposActivity"
+            android:label="@string/title_activity_repos"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.castgroup.app.presentation.ui.auth.AuthActivity" />
+        </activity>
+    </application>
+
+</manifest>
