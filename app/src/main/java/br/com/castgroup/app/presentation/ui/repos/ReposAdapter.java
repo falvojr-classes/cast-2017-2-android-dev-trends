@@ -50,7 +50,7 @@ class ReposAdapter extends RecyclerView.Adapter<ReposAdapter.ViewHolder> {
 
         ViewHolder(View view) {
             super(view);
-            //TODO (19) Butter Knife: ViewHolder
+            //TODO (20) Butter Knife: ViewHolder
             ButterKnife.bind(this, view);
         }
     }
